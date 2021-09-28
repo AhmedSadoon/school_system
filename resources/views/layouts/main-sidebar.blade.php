@@ -24,7 +24,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Grades-menu" class="collapse" data-parent="#sidebarnav">
-                            <li><a href="{{route('grade.index')}}">{{trans('main_trans.Grades_list')}}</a></li>
+                            <li><a href="{{route('Grades.index')}}">{{trans('main_trans.Grades_list')}}</a></li>
 
                         </ul>
                     </li>
@@ -37,8 +37,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="classes-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="calendar.html">Events Calendar </a> </li>
-                            <li> <a href="calendar-list.html">List Calendar</a> </li>
+                            <li><a href="{{route('Classrooms.index')}}">{{trans('main_trans.List_classes')}}</a></li>
                         </ul>
                     </li>
 
@@ -210,3 +209,5 @@
         </div>
 
         <!-- Left Sidebar End-->
+
+        <!--=================================
