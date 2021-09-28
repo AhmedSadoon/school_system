@@ -34,17 +34,18 @@ Route::group(
     ], function () {
 
      //==============================dashboard============================
-    Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
    //==============================dashboard============================
-    Route::group(['namespace' => 'Grades'], function () {
-        Route::resource('Grades', 'GradeController');
-    });
+
+        Route::resource('Grades', App\Http\Controllers\Web\Grade\GradeController::class);
+
+
 
     //==============================Classrooms============================
-    Route::group(['namespace' => 'Classrooms'], function () {
-        Route::resource('Classrooms', 'ClassroomController');
-    });
+
+        Route::resource('Classrooms', App\Http\Controllers\Web\ClassRoom\ClassroomController::class);
+   
 
 
 });

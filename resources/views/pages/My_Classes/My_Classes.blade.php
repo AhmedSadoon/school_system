@@ -197,7 +197,7 @@
                                             <label for="Name"
                                                 class="mr-sm-2">{{ trans('My_Classes_trans.Name_class') }}
                                                 :</label>
-                                            <input class="form-control" type="text" name="Name" />
+                                            <input class="form-control" type="text" name="Name" value="" />
                                         </div>
 
 
@@ -205,7 +205,7 @@
                                             <label for="Name"
                                                 class="mr-sm-2">{{ trans('My_Classes_trans.Name_class_en') }}
                                                 :</label>
-                                            <input class="form-control" type="text" name="Name_class_en" />
+                                            <input class="form-control" type="text" name="Name_class_en" value="" />
                                         </div>
 
 
