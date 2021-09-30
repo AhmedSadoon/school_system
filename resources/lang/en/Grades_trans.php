@@ -16,6 +16,7 @@ return [
     'Processes'=>'Processes',
     'Edit'=>'Edit',
     'exists'=>'This field already exists',
+    'delete_Grade_Error'=>'The Grade cannot be deleted because there are classes attached to it',
     'Delete'=>'Delete',
     'Close' => 'Close',
 

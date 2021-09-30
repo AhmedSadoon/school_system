@@ -37,15 +37,18 @@ Route::group(
      Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
    //==============================dashboard============================
-
-        Route::resource('Grades', App\Http\Controllers\Web\Grade\GradeController::class);
-
+   Route::resource('Grades', App\Http\Controllers\Web\Grade\GradeController::class);
 
 
     //==============================Classrooms============================
 
-        Route::resource('Classrooms', App\Http\Controllers\Web\ClassRoom\ClassroomController::class);
-   
+    Route::resource('Classrooms', App\Http\Controllers\Web\ClassRoom\ClassroomController::class);
+
+        Route::post('delete_all', [App\Http\Controllers\Web\ClassRoom\ClassroomController::class, 'delete_all'])->name('delete_all');
+
+        Route::post('Filter_Classes', [App\Http\Controllers\Web\ClassRoom\ClassroomController::class, 'Filter_Classes'])->name('Filter_Classes');
+
+
 
 
 });
